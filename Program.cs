@@ -88,14 +88,14 @@ namespace program230717
 
                 Console.Clear();
                 Console.WriteLine("X를 찾아라");
-                //for (int y = playerY - 2; y <= playerY + 2; y++)
-                //{
-                //    for (int x = playerX - 2; x <= playerX + 2; x++)
-                //    {
-                for (int y = 0; y < 16; y++)
+                for (int y = playerY - 2; y <= playerY + 2; y++)
                 {
-                    for (int x = 0; x < 16; x++)
+                    for (int x = playerX - 2; x <= playerX + 2; x++)
                     {
+                        //for (int y = 0; y < 16; y++)
+                        //{
+                        //    for (int x = 0; x < 16; x++)
+                        //    {
                         if (monsterX == x && monsterY == y)
                         {
                             Console.Write("ㅁ");
